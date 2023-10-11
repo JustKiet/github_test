@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cau 3</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var i = 0; var text, output;
+        let text = 
+            '{  "data":[' +
+                ' {"price":"30000$", "add":"VN", "roomNum":"64"},' +
+                '{"price":"30000$", "add":"VN", "roomNum":"64"},' +
+                '{"price":"30000$", "add":"VN", "roomNum":"64"},' +
+                '{"price":"30000$", "add":"VN", "roomNum":"64"},' +
+                '{"price":"30000$", "add":"VN", "roomNum":"64"},' +
+                '{"price":"30000$", "add":"VN", "roomNum":"64"}, ]}'
+        let obj = JSON.parse(text);
+        output = "<div>";
+        while (i < 6) {
+            output += "<div>" + obj.price[i] + obj.add[i] + obj.roomNum[i] + "</div>"
+        }
+        output += "</div>";
+        </script>
+    </body>
+</html>

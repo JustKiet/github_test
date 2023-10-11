@@ -1,0 +1,69 @@
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 20px ;
+  background-color: #433e0e;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: #EDEEC0;
+}
+
+.logo {
+  padding-left: 2%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.navbar navmenu {
+  text-align: right;
+  width: 50px;
+}
+
+.navbar span {
+  padding: 20px;
+  width: 5%;
+}
+
+.navbar navprofile {
+  width: 10px;
+}
+.fixed {
+  position: fixed;
+}
+
+.flex {
+  position: flex;
+}
+
+.font-kinsans{
+  font-family: "Kinsans";
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.font-white {
+  color: #f2f2f2;
+}
+
+.font-reklame {
+  font-family: "Reklame Script W00 Regular";
+}
+
+.right {
+  justify-content: right;
+}
+
+.left {
+  justify-content: left;
+}

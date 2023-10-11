@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>House for rent</title>
+        <style>
+            .menubar {
+                display: flex;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                background-color: #19a7ce;
+                padding: 5px 20 ;
+            }
+            .item {
+                width: 200px;
+                height: 50px;
+                background-color: #19a7ce;
+                font-size: 40px;
+            }
+
+            .hightlight {
+                width: 100%;
+                height: 200px;
+                border: 1px solid;
+                border-color: #146c94;
+            }
+            .menuitems{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                flex-direction: row;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="menubar">
+            <h1 style="margin-left: 30px;">House for Rent</h1>
+            <menu>
+                <ol style="align-items: center; flex-direction: row;">
+                    <li class="menuitems">Trang chủ</li>
+                    <li class="menuitems">Nhà đất</li>
+                    <li class="menuitems">Cho Thuê</li>
+                    <li class="menuitems">Dự án</li>
+                </ol>
+            </menu>
+        </header>
+        <script>
+            var i;
+            i = 0;
+            var data = [
+                {"price":"30000$", "add":"VN", "roomNum":"64"},
+                {"price":"30000$", "add":"VN", "roomNum":"64"},
+                {"price":"30000$", "add":"VN", "roomNum":"64"},
+                {"price":"30000$", "add":"VN", "roomNum":"64"},
+                {"price":"30000$", "add":"VN", "roomNum":"64"},
+                {"price":"30000$", "add":"VN", "roomNum":"64"},
+        ]
+        while (i < data.length) {
+            $('div#datainfo').append('<div>'+ '<p>' + data[i].price + '</p>'+ '<p>' + data[i].add + '</p>' + '<p>' + data[i].roomNum + '</p>' + '</div>');
+        }
+        </script>
+        <footer>
+            <div>
+                Name: Do Huu Kiet
+                MSV: 11212953
+                Class: IT63A
+            </div>
+        </footer>
+    </body>
+</html>
